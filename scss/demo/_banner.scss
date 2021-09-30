@@ -1,0 +1,36 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+#banner {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;           
+
+    &.home-banner {
+        background-image: url(../images/banner/banner_bg.png);
+        height: 47.375rem; 
+    }
+
+    &.about-banner {
+        background-image: url(../images/banner/about_banner_bg.png);        
+        height: auto;
+        padding-top: $spacer * 4.625;
+        padding-bottom: $spacer * 7.125;
+    }
+}

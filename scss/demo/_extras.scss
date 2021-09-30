@@ -1,0 +1,130 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here extra styles for demo. Thanks!
+-----------------------------------------------------------------*/
+
+.history {
+	li {
+		display: flex;
+		align-items: flex-start;
+		padding-left: $spacer;
+		padding-bottom: $spacer * 3.75;
+		
+		h3 {
+			color: #dae0e0;
+			width: 13rem;
+			flex: 1 0 auto;
+		}
+	}
+}
+
+.error-404 {
+	background-image: url(../images/404.png);
+	padding-top: 34.125rem;
+	padding-bottom: 10.25rem;
+}
+
+.section-bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn-group {
+	// display: flex;
+	
+	.btn {
+		color: black;
+		background-color: white;
+		border-color: rgba(40, 40, 40, 0.5);
+		margin-left: 1.8rem;
+		
+		&:hover,
+		&:focus {
+			background-color: $theme-color;
+			border-color: $theme-color;
+			color: white;
+		}
+	}
+}
+
+.btn-primary {
+	font-weight: 700;
+	font-style: italic;
+	font-size: $h5-font-size;
+	color: white;
+	font-family: $heading-font;
+	text-transform: uppercase;
+	padding: 1.8rem 2rem;
+
+}
+.mark {
+	background-color: $theme-color;
+	color: white;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	font-style: italic;
+	line-height: $line-height-lg;
+	margin: $spacer * 1.25;
+	width: 3.85rem;
+	height: 3.85rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.line {
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 4rem;
+		border-top: 1px solid $theme-color;
+		left: -6rem;
+		top: .75rem;
+	}
+}
+
+.link {
+	span {
+		margin-right: 1rem;
+	}
+
+	li {
+	margin-right: 1rem;
+		opacity: 0.5;
+
+		&:hover,
+		&:focus {
+			color: $theme-color;
+			opacity: 1;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+  .nine-cols .col-md-1,
+  .nine-cols .col-xl-1 {
+    width: 11.11111111111111111111111%;
+    *width: 11.11111111111111111111111%;
+  }
+}

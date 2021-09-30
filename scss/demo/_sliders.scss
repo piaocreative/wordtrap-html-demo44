@@ -1,0 +1,108 @@
+
+/* ----------------------------------------------------------------
+
+	slider.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Slider
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for all sliders. Thanks!
+-----------------------------------------------------------------*/
+
+#products {
+	display: flex;
+
+	.item {
+		padding: 0 1rem;
+	}
+}
+
+#test {
+	display: flex;
+	position: relative;
+
+	.item {
+		padding: 2rem 5rem;
+	}
+
+	.active {
+		box-shadow: 3px 10px 20px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.slick-dots {
+		display: flex;
+		position: absolute;
+		top: -3rem;
+		right: 0;
+		margin: 0;
+		padding: 1rem 0;
+		
+		list-style-type: none;
+		
+			li {
+				margin: 0 0.25rem;
+			}
+		
+			button {
+				display: block;
+				width: 1rem;
+				height: 1rem;
+				padding: 0;
+				
+				border: none;
+				border-radius: 100%;
+				background-color: #eaeaea;
+				
+				text-indent: -9999px;
+			}
+		
+			li.slick-active button {
+				background-color: $theme-color;
+			}
+		
+	}
+
+
+
+.slick-slide.slick-current.slick-active{
+	opacity: 1;}
+.slick-slide.slick-active{opacity: 0.5;}
+.slick-slide.slick-current.slick-active {
+transform: scale(1.4); 
+transition: all 0.5s;  
+}
+}
+
+
+.dots {
+	display: flex;
+
+	.dot {
+		margin: 0 0.5rem;
+		display: block;
+		width: 0.5rem;
+		height: 0.5rem;
+		padding: 0;
+		border: none;
+		border-radius: 100%;
+		background-color: #eaeaea;
+	}
+
+	.active {
+		background-color: $theme-color;
+	}
+}
+
+.active {
+	opacity: 1 !important;
+}
+
+.slide {
+	opacity: 0.5;
+}

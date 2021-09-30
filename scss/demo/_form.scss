@@ -1,0 +1,53 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+
+// Textarea
+textarea {
+    resize: none;
+}
+
+// Required field
+.required-field {
+    position: relative;
+}
+
+.form-control {
+    border: 1px solid #eaeaea;
+    background-color: transparent;
+    color: white;
+    font-size: $h5-font-size;
+    font-weight: 700;
+    font-style: italic;
+    padding: 1.75rem;
+    border-radius: 4px !important;
+}
+.contact-form {
+    .btn {
+        padding: 2rem 5.2rem;
+    }
+}
+
+.rounded-2 {
+    border-radius: 20px !important;
+}
+
+#widget-subscribe-form {
+    @include media-breakpoint-down(xl) {
+        margin-top: 2rem;
+    }
+    
+    .btn {
+        padding: 1.8rem 3.25rem;
+        margin-left: -4rem;
+        z-index: 100;
+    }
+}
+

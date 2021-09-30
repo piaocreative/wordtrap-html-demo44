@@ -1,0 +1,46 @@
+
+/* ----------------------------------------------------------------
+
+	footer.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for footer. Thanks!
+-----------------------------------------------------------------*/
+
+#footer {
+	position: relative;
+	background-color: $theme-color;
+}
+
+#footer-main {
+	padding-top: 4.9rem;
+	background-color: $theme-color;
+	color: white;
+
+	hr {
+		margin-top: 4.6875rem;
+		background-color: white;
+	}
+}
+
+#footer-bottom {
+	background-color: $theme-color;
+	padding-top: $spacer * 4.18;
+	padding-bottom: $spacer * 3.75;
+}
+
+#copyrights {
+	color: white;
+	font-size: 0.875rem;
+	font-weight: 400;	
+	line-height: 1;
+	z-index: 1;	
+	font-family: $heading-font;
+}
