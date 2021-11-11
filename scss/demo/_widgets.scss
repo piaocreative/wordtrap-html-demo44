@@ -133,20 +133,4 @@
 			}
 		}
 	}
-
-	// Widget - Subscribe
-	&.widget-subscribe {
-		.widget-content {
-			#widget-subscribe-form {
-				.form-control,
-				.btn {
-					@include border-radius(1.625rem);
-				}
-
-				.input-group-append {
-					margin-left: -$spacer * 2.875;
-				}
-			}
-		}
-	}
 }

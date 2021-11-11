@@ -27,6 +27,12 @@ img {
 	}
 }
 
+.bg-cover {
+	background-repeat: no-repeat;	
+    background-size: cover;
+    position: relative;  
+}
+
 //-------------------- Section ------------------//
 
 .section {

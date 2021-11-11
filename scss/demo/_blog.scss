@@ -34,7 +34,6 @@
 }
 
 .post-content {
-	position: relative;
 	margin-bottom: $spacer * 1.875;
 
 	p {
@@ -42,11 +41,30 @@
 	}
 }
 
+.entry-meta {
+	background-color: $theme-color;
+	color: white;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	font-style: italic;
+	line-height: $line-height-lg;
+	margin: $spacer * 1.25;
+	width: 3.85rem;
+	height: 3.85rem;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .entry-title {
 	padding-top: 1rem;
 	margin-bottom: 1rem;
 	font-size: $h3-font-size;
-	font-family: $heading-font;
 	color:$heading-color;
 	font-weight: 600;
 	line-height: $line-height-sm;

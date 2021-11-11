@@ -21,7 +21,6 @@
 	
 	.title {
 		display: block;		
-		font-family: $heading-font;
 		font-weight: 900;		
 		line-height: 1;
 		margin-bottom: 0;
@@ -53,18 +52,16 @@
 
 .breadcrumb {
 	display: flex;
-	font-size: $h6-font-size;
 	padding: $spacer * 0.625 0;
 
 	li {
-		padding: 0 $spacer * 0.625;
-
-		&.active {
-			color: $secondary;
-		}
-
-		&:first-child {
-			padding-left: 0;
+		a {
+			font-size: $h6-font-size;
+			padding: 0 $spacer * 0.625;
+	
+			&.active {
+				color: $secondary;
+			}
 		}
 	}
 }
